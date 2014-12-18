@@ -22,3 +22,9 @@ zsh setting
 ~ % cd $HOME/
 ~ % zcompile ~/.zsh/.zshrc
 ```
+
+### reload ###
+```sh
+~ % cd $HOME/
+~ % source ~/.zshrc
+```
