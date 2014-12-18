@@ -108,6 +108,5 @@ alias cpbk='\cp_back'
 # load .zshrc_*
 #######################################
 [ -f $ZDOTDIR/.zshrc_prompt ] && . $ZDOTDIR/.zshrc_prompt
-[ -f $ZDOTDIR/.zshrc_`uname`  ] && . $ZDOTDIR/.zshrc_`uname`
 [ -f $ZDOTDIR/.zshrc_external ] && . $ZDOTDIR/.zshrc_external
 [ -f $ZDOTDIR/.zshrc_local    ] && . $ZDOTDIR/.zshrc_local
