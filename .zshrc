@@ -110,3 +110,4 @@ alias cpbk='\cp_back'
 [ -f $ZDOTDIR/.zshrc_prompt ] && . $ZDOTDIR/.zshrc_prompt
 [ -f $ZDOTDIR/.zshrc_external ] && . $ZDOTDIR/.zshrc_external
 [ -f $ZDOTDIR/.zshrc_local    ] && . $ZDOTDIR/.zshrc_local
+[ -f $ZDOTDIR/.zshrc_`whoami`  ] && . $ZDOTDIR/.zshrc_`whoami`

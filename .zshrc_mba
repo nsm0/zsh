@@ -1,0 +1,2 @@
+echo ".zshrc_mba"
+[ -f $ZDOTDIR/.zshrc_prompt_high_functionality    ] && . $ZDOTDIR/.zshrc_prompt_high_functionality
