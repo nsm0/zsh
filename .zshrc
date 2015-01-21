@@ -15,6 +15,7 @@ setopt hist_reduce_blanks # 余分なスペースを削除してヒストリに�
 setopt hist_find_no_dups  # 履歴検索中、重複を飛ばす
 setopt no_beep                # beep を無効
 setopt interactive_comments   # '#' 以降をコメントとして扱う
+setopt nonomatch              # グロブ展開しない
 
 
 #######################################
