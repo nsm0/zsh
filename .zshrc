@@ -53,6 +53,27 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}  # 補完候補に
 
 
 #######################################
+# ssh-add
+#######################################
+# http://qiita.com/garaemon/items/988da9c6345cf1589d96
+echo -n "ssh-agent: "
+if [ -e ~/.ssh-agent-info ]; then
+ source ~/.ssh-agent-info
+fi
+
+ssh-add -l >&/dev/null
+if [ $? = 2 ] ; then
+ echo -n "ssh-agent: restart...."
+ ssh-agent >~/.ssh-agent-info
+ source ~/.ssh-agent-info
+fi
+if ssh-add -l >&/dev/null ; then
+ echo "ssh-agent: Identity is already stored."
+else
+ ssh-add
+fi
+
+#######################################
 # Alias
 #######################################
 alias ls="ls -aFG"
@@ -71,7 +92,7 @@ alias cp='cp -i'
 alias ..='cd ..' # ひとつ上へ
 alias ...='cd -'
 
-alias grep='grep --color=auto'
+alias grep='grep -n --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
