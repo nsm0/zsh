@@ -14,7 +14,8 @@ zsh setting
 .zsh  cd $HOME/
 ~ % ln -s .zsh/.zshenv .
 ~ % ln -s .zsh/.zprofile .
-
+~ % ln -s .zsh/.zshrc .
+~ % mv .zshrc_mba .zshrc_{user_name}
 ```
 
 ### compile ###
