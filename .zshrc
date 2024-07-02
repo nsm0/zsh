@@ -10,7 +10,7 @@ setopt hist_ignore_space  # 余分な空白は詰めて記録
 setopt bang_hist          # !を使ったヒストリ展開を行う(d)
 setopt extended_history   # ヒストリに実行時間も保存する
 setopt hist_ignore_dups   # 直前と同じコマンドはヒストリに追加しない
-setopt share_history      # 他のシェルのヒストリをリアルタイムで共有する
+#setopt share_history      # 他のシェルのヒストリをリアルタイムで共有する
 setopt hist_reduce_blanks # 余分なスペースを削除してヒストリに保存する
 setopt hist_find_no_dups  # 履歴検索中、重複を飛ばす
 setopt no_beep                # beep を無効
